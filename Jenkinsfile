@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Static Analysis') {
             steps {
-
+                test()
                 echo 'Run the static analysis to the code' 
             }
         }
