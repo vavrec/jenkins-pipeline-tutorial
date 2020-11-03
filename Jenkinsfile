@@ -1,4 +1,4 @@
-library identifier: 'shared-lib@master',
+library identifier: 'shared-lib@main',
         retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/vavrec/shared-lib.git'])
 
 pipeline {
