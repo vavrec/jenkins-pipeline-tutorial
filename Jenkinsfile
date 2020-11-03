@@ -1,8 +1,12 @@
+library identifier: 'jenkins-pipeline-demo-library@master',
+        retriever: modernSCM([$class: 'GitSCMSource', remote: 'https://github.com/vavrec/shared-lib.git'])
+
 pipeline {
     agent any 
     stages {
         stage('Static Analysis') {
             steps {
+                test();
                 echo 'Run the static analysis to the code' 
             }
         }
